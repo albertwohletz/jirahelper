@@ -17,6 +17,7 @@ $("#request").click( function() {
    }
 );
 
+// Sends api call to add that request.
 function RequestAccess(access_type, space_name, reason){
     $.ajax({
         url: '/api/request_access?type='+access_type+"&space_name="+space_name+"&reason="+reason,

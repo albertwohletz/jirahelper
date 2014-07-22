@@ -1,6 +1,8 @@
 /**
  * Created by albertlwohletz on 7/22/14.
  */
+
+// Click yes button, delete row and make api call
 jQuery(".yes").click(function(e){
     e.preventDefault();
     var row = $(this).parent().parent().children();

@@ -37,3 +37,7 @@ This DB allows for prototyping of implementation, without a Confluence API envir
     space_id - FK pointing to spaces
     access_type_requested - access_type string
     explanation_string - String of user inputed explanation.
+
+TODO:
+Implement edit button for management.  This button would prompt a popup where you can edit or delete access rights. 
+In general alot of the input could stand to have more error checking. 

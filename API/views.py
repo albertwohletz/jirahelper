@@ -2,7 +2,7 @@ __author__ = 'albertlwohletz'
 import models
 from django.shortcuts import render
 
-# To be replaced by Confluence API in final implementation.
+# Creates an access request in pending table.
 def request_access(request):
     type = request.GET['type']
     space_name = request.GET['space_name']
@@ -18,6 +18,7 @@ def request_access(request):
     req.save()
     return render(request, 'base_template.html', {})
 
+# Either approves or denies a request.
 def manage_request(request, approve):
     user_name = request.GET['user']
     space_name = request.GET['space_name']
@@ -39,11 +40,13 @@ def manage_request(request, approve):
 
     return render(request, 'base_template.html', {})
 
+# Approves request and adds access to database.
 def approve_request(request):
     manage_request(request, True)
 
     return render(request, 'base_template.html', {})
 
+# Denies request and removes access from database.
 def remove_request(request):
     manage_request(request, False)
 
