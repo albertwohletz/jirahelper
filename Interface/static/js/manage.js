@@ -9,7 +9,7 @@ jQuery(".yes").click(function(e){
     var access=row[2].innerHTML;
 
     $.ajax({
-        url: '/api/approve_request?user='+user+"&space="+space,
+        url: '/api/approve_request?user='+user+"&space_name="+space + "&access=" + access,
         cache: false,
         dataType: "HTTP",
         type: "POST"
@@ -25,7 +25,7 @@ jQuery(".no").click(function(e){
     var space=row[1].innerHTML;
 
     $.ajax({
-        url: '/api/remove_request?user='+user+"&space="+space,
+        url: '/api/remove_request?user='+user+"&space_name="+space,
         cache: false,
         dataType: "HTTP",
         type: "POST"

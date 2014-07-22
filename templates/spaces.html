@@ -4,8 +4,9 @@
     <title></title>
 </head>
 <body>
+<p>Please choose a space.  </p>
 {% for space in spaces %}
-    {{ space.name }}
+    <p><a href=/request/{{ space.name }}>{{ space.name }}</p>
 {% endfor %}
 </body>
 </html>
