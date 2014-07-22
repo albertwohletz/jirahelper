@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b2f445-1764-4cd3-aa83-438b7eaa7ba6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base_template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/spaces.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Interface/models.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/janestreetconfluence/settings.py" afterPath="$PROJECT_DIR$/janestreetconfluence/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/janestreetconfluence/urls.py" afterPath="$PROJECT_DIR$/janestreetconfluence/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Interface/views.py" afterPath="$PROJECT_DIR$/Interface/views.py" />
@@ -34,7 +34,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/janestreetconfluence/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="26" selection-start="2552" selection-end="2552" vertical-scroll-proportion="-13.884615" vertical-offset="1079" max-vertical-offset="1545">
+            <state line="55" column="0" selection-start="1526" selection-end="1526" vertical-scroll-proportion="12.653846" vertical-offset="1154" max-vertical-offset="1560">
               <folding />
             </state>
           </provider>
@@ -49,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/janestreetconfluence/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="18" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+            <state line="15" column="19" selection-start="481" selection-end="481" vertical-scroll-proportion="0.4513889" vertical-offset="0" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
@@ -61,16 +61,27 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interface/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+            <state line="13" column="25" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spaces.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/spaces.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="25" selection-start="90" selection-end="90" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base_template.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base_template.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base_template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="74" selection-start="415" selection-end="415" vertical-scroll-proportion="0.36764705" vertical-offset="0" max-vertical-offset="408">
+            <state line="12" column="7" selection-start="476" selection-end="476" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -79,7 +90,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+            <state line="6" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -100,10 +111,12 @@
       <list>
         <option value="$PROJECT_DIR$/API/urls.py" />
         <option value="$PROJECT_DIR$/API/models.py" />
-        <option value="$PROJECT_DIR$/janestreetconfluence/urls.py" />
-        <option value="$PROJECT_DIR$/Interface/views.py" />
-        <option value="$PROJECT_DIR$/janestreetconfluence/settings.py" />
         <option value="$PROJECT_DIR$/templates/base_template.html" />
+        <option value="$PROJECT_DIR$/janestreetconfluence/urls.py" />
+        <option value="$PROJECT_DIR$/templates/request.html" />
+        <option value="$PROJECT_DIR$/Interface/views.py" />
+        <option value="$PROJECT_DIR$/templates/spaces.html" />
+        <option value="$PROJECT_DIR$/janestreetconfluence/settings.py" />
       </list>
     </option>
   </component>
@@ -168,6 +181,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="janestreetjira" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="janestreetjira" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="janestreetconfluence" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,7 +488,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26171243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -519,7 +546,9 @@
     <entry file="file://$PROJECT_DIR$/Interface/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="28" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -554,7 +583,9 @@
     <entry file="file://$PROJECT_DIR$/Interface/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="31" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -586,23 +617,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/base_template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interface/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/janestreetconfluence/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="26" selection-start="2552" selection-end="2552" vertical-scroll-proportion="-13.884615" vertical-offset="1079" max-vertical-offset="1545">
+        <state line="12" column="7" selection-start="476" selection-end="476" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
           <folding />
         </state>
       </provider>
@@ -614,16 +631,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/janestreetconfluence/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/spaces.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state line="6" column="25" selection-start="90" selection-end="90" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_template.html">
+    <entry file="file://$PROJECT_DIR$/Interface/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="74" selection-start="415" selection-end="415" vertical-scroll-proportion="0.36764705" vertical-offset="0" max-vertical-offset="408">
+        <state line="13" column="25" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/janestreetconfluence/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1526" selection-end="1526" vertical-scroll-proportion="12.653846" vertical-offset="1154" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/janestreetconfluence/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="481" selection-end="481" vertical-scroll-proportion="0.4513889" vertical-offset="0" max-vertical-offset="432">
           <folding />
         </state>
       </provider>
