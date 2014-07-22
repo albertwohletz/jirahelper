@@ -39,6 +39,5 @@ This DB allows for prototyping of implementation, without a Confluence API envir
     explanation_string - String of user inputed explanation.
 
 TODO:
-Create some basic CSS so everything looks pretty.
 Implement edit button for management.  This button would prompt a popup where you can edit or delete access rights. 
 In general alot of the input could stand to have more error checking. 
