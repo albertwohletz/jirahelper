@@ -4,9 +4,13 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'janestreetconfluence.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+    # Confluence API.  Currently just a local database, this component would change when advancing from prototype to
+    # real implementation.
+    url(r'^api/', include('API.urls')),
 
+    # Default Page
+    #url(r'^$', 'Interface.views'),
+
+    # Django Admin Tools
     url(r'^admin/', include(admin.site.urls)),
 )
