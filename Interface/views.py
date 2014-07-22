@@ -15,6 +15,8 @@ def request_page(request):
     return render(request, 'spaces.html', context)
 
 def manage(request):
-    requests = models.Pending.objects.all()
-    context = {'requests': requests}
+    requests = models.Pending.objects.all().values("user__username", "space__name", "access_type", "explanation_string")
+    rights = models.Access.objects.all().values("user__username", "space__name", "access_type")
+
+    context = {'requests': requests, "rights": rights}
     return render(request, 'manage.html', context)

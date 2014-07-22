@@ -6,10 +6,32 @@
     <title></title>
 </head>
 <body>
-{% for request in requests %}
-{{ request.explanation_string }}
-{% endfor %}
+<table>
+    <th>User</th><th>Space</th><th>Access Type</th><th>Request Reason</th>
+    {% for request in requests %}
+        <tr>
+            <td>{{ request.user__username }}</td>
+            <td>{{ request.space__name }}</td>
+            <td>{{ request.access_type }}</td>
+            <td> {{ request.explanation_string }}</td>
+            <td><button class = 'yes'>Yes</button><button class="no">No</button></td>
+        </tr>
+    {% endfor %}
+</table>
+
+<table>
+    <th>User</th><th>Space</th><th>Access Type</th>
+    {% for right in rights %}
+        <tr>
+            <td>{{ right.user__username }}</td>
+            <td>{{ right.space__name }}</td>
+            <td>{{ right.access_type }}</td>
+            <td><button class = 'edit'>Edit</button></td>
+        </tr>
+    {% endfor %}
+</table>
+
 </body>
-<script type="text/javascript" src="{% static 'js/request_access.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/manage.js' %}"></script>
 <input type="hidden" id="space_name" value={{ space_name }}>
 </html>
