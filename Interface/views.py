@@ -13,3 +13,8 @@ def request_page(request):
     spaces = models.Spaces.objects.all()
     context = {'spaces': spaces}
     return render(request, 'spaces.html', context)
+
+def manage(request):
+    requests = models.Pending.objects.all()
+    context = {'requests': requests}
+    return render(request, 'manage.html', context)

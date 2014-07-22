@@ -1,6 +1,6 @@
 __author__ = 'albertlwohletz'
 import models
-from django.contrib.auth.models import User
+from django.shortcuts import render
 
 # To be replaced by Confluence API in final implementation.
 def request_access(request):
@@ -9,7 +9,11 @@ def request_access(request):
     reason = request.GET['reason']
 
     # Get Space
-    new_space = models.Spaces.objects.filter(name__=space_name)
-    # Get User
+    new_space = models.Spaces.objects.get(name=space_name)
 
-    req = models.Pending(user=User, space=new_space, access_type=type, explanation_string=reason)
+    # Get User
+    user = request.user
+
+    req = models.Pending(user=user, space=new_space, access_type=type, explanation_string=reason)
+    req.save()
+    return render(request, 'base_template.html', {})

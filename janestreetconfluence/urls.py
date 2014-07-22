@@ -14,6 +14,7 @@ urlpatterns = patterns('',
 
     url(r'^request/(?P<space_name>\S+)/$', 'Interface.views.request_access'),
     url(r'^request/', 'Interface.views.request_page'),
+    url(r'^manage/', 'Interface.views.manage'),
     # Django Admin Tools
     url(r'^admin/', include(admin.site.urls)),
 )
