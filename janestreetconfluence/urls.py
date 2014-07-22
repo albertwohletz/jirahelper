@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     url(r'^api/', include('API.urls')),
 
     # Default Page
-    #url(r'^$', 'Interface.views'),
+    url(r'^$', 'Interface.views.default'),
 
     # Django Admin Tools
     url(r'^admin/', include(admin.site.urls)),
