@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="{% static 'jquery-ui-1.10.4/js/jquery-1.10.2.js' %}"></script>
+    <title></title>
+</head>
+<body>
+<p>You are requesting access for the <b>{{ space_name }}</b> space.</p>
+<p>Reason for access: <input type="text" id="description"></p>
+<p><input type="radio" name="access" value="r" default: checked>Read Only</p>
+<p><input type="radio" name="access" value="rw">Read and Write</p>
+<button id="request">Request Access</button>
+</body>
+<script type="text/javascript" src="{% static 'js/request_access.js' %}"></script>
+</html>

@@ -6,7 +6,8 @@ def default(request):
     return render(request, 'base_template.html', {})
 
 def request_access(request, space_name):
-    return render(request, 'base_template.html', {})
+    context = {'space_name': space_name}
+    return render(request, 'request_access.html', context)
 
 def request_page(request):
     spaces = models.Spaces.objects.all()
